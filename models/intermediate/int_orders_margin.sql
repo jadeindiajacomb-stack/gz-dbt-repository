@@ -6,5 +6,4 @@ SELECT
  , SUM (purchase_cost) AS puchase_cost
  , SUM (margin) AS margin
 FROM {{ ref('int_sales_margin') }}
-GROUP BY orders_id, date_date,
-WHEN orders_id = 1002561
+GROUP BY orders_id, date_date

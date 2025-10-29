@@ -11,7 +11,10 @@ sources:
     error_after: {count: 24, period: hour}
   tables:
     -  name: sales
+       identifier: raw_gz_sales
     - name: ship
+      identifier: raw_gz_ship
     - name: product
+      identifier: raw_gz_product
 
   

@@ -1,0 +1,17 @@
+version: 2
+
+sources: 
+- name: raw
+  database: just-student-475409-a2
+  schema: gz_raw_data
+  loader: bigquery
+  description: Gz_raw data set 
+  freshness:
+    warn_after: {count: 12, period: hour}
+    error_after: {count: 24, period: hour}
+  tables:
+    -  name: sales
+    - name: ship
+    - name: product
+
+  

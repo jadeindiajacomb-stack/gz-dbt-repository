@@ -1,6 +1,6 @@
 SELECT 
 date_date, 
-COUNT (orders_id), AS Total_transactions,
+COUNT (orders_id) AS Total_transactions,
 SUM (revenue) AS Total_revenue,
 SUM(revenue)/ COUNT(orders_id) AS Average_Basket,
 SUM (puchase_cost) AS Total_purchase_cost,
